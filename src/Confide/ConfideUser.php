@@ -51,7 +51,7 @@ trait ConfideUser
      *
      * @return bool
      */
-    public function isValid()
+    public function isValid($ruleset = null, $mergeWithSaving = true)
     {
         // Instantiate the Zizaco\Confide\UserValidator and calls the
         // validate method. Feel free to use your own validation
